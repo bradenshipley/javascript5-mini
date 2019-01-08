@@ -69,17 +69,18 @@ var customers = [
     email: "idurrad9@indiatimes.com",
     bitcoin_address: "1ErLV7m1ARgf9Y1mbWWqnEiFtZnDyrjzUP"
   }
-];
+]
 
 // Create an array of all email addresses
 // first without using lodash's map (with property argument) method, then with it.
 
-//CODE HERE
+let emails = []
+for (let i = 0; i < customers.length; i++) {
+  emails.push(customers[i][email])
+}
 
-
-
-var inviteList1 = ["Ed", "Fanny", "Mildred", "Alice", "James"];
-var inviteList2 = ["Jake", "Mildred", "Jimmy", "Ed", "Franklin"];
+var inviteList1 = ["Ed", "Fanny", "Mildred", "Alice", "James"]
+var inviteList2 = ["Jake", "Mildred", "Jimmy", "Ed", "Franklin"]
 
 // Uh oh! We are having a party and two invite lists were created.
 // Create a duplicate-free list of the people we want at the party without lodash's _.union().
@@ -94,7 +95,7 @@ var friendsOfJim = [
   "Nancy",
   "Alison",
   "Goose"
-];
+]
 var friendsOfBetty = [
   "Burt",
   "Dave",
@@ -105,7 +106,7 @@ var friendsOfBetty = [
   "Victoria",
   "Tom",
   "Nancy"
-];
+]
 
 // Jim and Betty are having a party, but they only want to invite mutual friends.
 // Create an array of mutual friends. First without using lodash.
@@ -144,7 +145,7 @@ var purchases = [
     company: "Dunder Mifflin",
     order: 5000
   }
-];
+]
 
 // First, group the purchases by company without lodash
 // then do it again using _.groupBy()

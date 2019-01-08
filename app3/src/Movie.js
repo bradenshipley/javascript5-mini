@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react"
 
-export function Movie() {
-  return (
-      <p>{movie}</p>
-  )  
+const Movie = props => {
+  return <p>{props.movie}</p>
 }
+export default Movie
